@@ -1,0 +1,26 @@
+version: '3.7'
+label_select: cam
+root_path: /home/liuchenghua/datasets_nfs/dair_v2x_i
+data_info: source_format/single-infrastructure-side/data_info.json
+
+output_path: /home/liuchenghua/datasets_nfs/dair_v2x_i
+output_floder_name: kitti_format 
+calib_floder: 'source_format/single-infrastructure-side/calib/camera_intrinsic'
+lidar_to_camera_floder: 'source_format/single-infrastructure-side/calib/virtuallidar_to_camera'
+camera_label_floder: 'source_format/single-infrastructure-side/label/camera'
+lidar_label_floder: 'source_format/single-infrastructure-side/label/virtuallidar'
+image_floder: 'source_format/single-infrastructure-side-image'
+velodyne_floder: 'source_format/single-infrastructure-side-velodyne'
+camera_label_floder: source_format/single-infrastructure-side/label/camera
+virtuallidar_label_floder: source_format/single-infrastructure-side/label/virtuallidar
+
+random_seed: 2      #Set the random seed used to generate the splitting file for duplication and version control
+onlyFileName: True      #Option to generate file names or absolute paths
+train_set_proportion: 0.7
+validation_set_proportion: 0.2
+test_set_proportion: 0.1
+
+define_list_path_flag: True
+only image_list_flag: True
+image_list_define_path: training/image_2/
+image_label_list_path: training/label_2/
