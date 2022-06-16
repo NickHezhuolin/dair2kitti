@@ -1,9 +1,9 @@
 version: '3.7'
 label_select: cam
-root_path: /home/liuchenghua/datasets_nfs/dair_v2x_i
+root_path: "source-data-path/(exp: /home/hzl/data/dair)"
 data_info: source_format/single-infrastructure-side/data_info.json
 
-output_path: /home/liuchenghua/datasets_nfs/dair_v2x_i
+output_path: "output-data-path/(exp: /home/hzl/data/dair)"
 output_floder_name: kitti_format 
 calib_floder: 'source_format/single-infrastructure-side/calib/camera_intrinsic'
 lidar_to_camera_floder: 'source_format/single-infrastructure-side/calib/virtuallidar_to_camera'
